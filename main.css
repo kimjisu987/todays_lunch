@@ -73,8 +73,7 @@ button:hover {
     border-radius: 50%;
     border: 12px solid #fff;
     outline: 3px solid var(--blue);
-    background: var(--bgColor) url(./icon/icons.svg) no-repeat 0% 0% / 500%;
-    background-position: 0% 25%;
+    background: var(--bgColor) url(./icon/icons.svg) no-repeat 100% 100% / 500%;
 }
 .menuMenu {
     font-weight: 600;
