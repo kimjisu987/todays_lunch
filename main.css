@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@font-face {
+    font-family: 'HakgyoansimPuzzleTTF-Black';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimPuzzleTTF-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bgColor: #F7F3E8;
+    --pink: #FFB3CD;
+    --blue: #00549E;
+}
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Gowun Dodum", Arial, sans-serif;
+    color: inherit;
+}
+html {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center; align-items: center;
+    background: var(--bgColor);
+}
+body {
+    text-align: center;
+    display: flex; gap: 1rem; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+h1 {
+    color: var(--pink);
+    font-family: "Shrikhand", Arial, sans-serif;
+    -webkit-text-stroke: 1px var(--blue);
+    font-size: 3rem;
+    text-shadow: 3px 3px var(--blue);
+}
+button {
+    outline: none; border: none;
+    font-family: "Shrikhand", Arial, sans-serif;
+    background: var(--bgColor);
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold; font-size: 1.2rem;
+}
+button:hover {
+    background: var(--blue);
+    border-color: var(--pink);
+    color: var(--pink);
+}
+
+#menuDisplay {
+    position: relative;
+    text-align: center;
+    /* border: 2px solid var(--fontColor); */
+    border-radius: 3rem;
+    background: var(--pink);
+    border: 3px solid var(--blue);
+    box-shadow: 6px 6px var(--blue);
+    color: var(--blue);
+    min-width: 400px;
+    padding: 2rem;
+}
+.menuImg {
+    display: inline-block;
+    padding: 1rem;
+    width: 150px; aspect-ratio: 1;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    outline: 3px solid var(--blue);
+    background: var(--bgColor);
+}
+.menuMenu {
+    font-weight: 600;
+    margin-block: 1rem 0.5rem;
+}
+.menuName {
+    font-family: 'HakgyoansimPuzzleTTF-Black';
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 2rem; font-weight: 900;
+}
